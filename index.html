@@ -29,7 +29,7 @@
   </style>
   <script>
     function updateCountdown() {
-      const targetDate = new Date('May 13, ' + new Date().getFullYear() + ' 00:00:00 EST');
+      const targetDate = new Date(`May 13, ${new Date().getFullYear()} 00:00:00 GMT-0400`); // EDT (UTC-4)
       const now = new Date();
       const timeDifference = targetDate - now;
 
