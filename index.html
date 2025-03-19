@@ -30,7 +30,7 @@
   <script>
     function updateCountdown() {
       const currentYear = new Date().getFullYear();
-      const targetDate = new Date(Date.UTC(currentYear, 4, 13, 4, 0, 0)); // May 13th 12 AM EST (4 AM UTC)
+      const targetDate = new Date(`May 13, ${currentYear} 00:00:00`); // Local time on May 13th at 12 AM
       const now = new Date();
       const timeDifference = targetDate - now;
 
